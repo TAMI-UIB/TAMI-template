@@ -8,7 +8,7 @@ Asegura't que tens instaal·lat python3.12 y virtualenv (se pot fer amb qualsevo
 
 ### Instal·lació de Python 3.12
 
-1. **Instala Python 3.12**: Si no tienes Python 3.12, pots instal·lar-lo seguint les instruccions del seu lloc web [Python](https://www.python.org/downloads/).
+1. **Instala Python 3.12**: Si no tens Python 3.12, pots instal·lar-lo seguint les instruccions del seu lloc web [Python](https://www.python.org/downloads/).
 2. Assegura't d'afegir el python al teu PATH.
 
 ### Instal·lació de virtualenv
