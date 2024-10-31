@@ -56,21 +56,25 @@ Recordeu que en l'argparser hi ha molts d'arguments que podeu editar, si no teni
 
 Per executar l'spcrip de test recordeu que és imprescindible assegurar-se que els arguments de instanciació del model siguin els mateixos que amb que heu entrenat 
 
-L'escrip de test ens demana un directori on volem guardar les imatges i la ruta als pesos.
+L'Script de test ens demana un directori on volem guardar les imatges i la ruta als pesos.
 
 Per defecta el logger guarda els darrers pesos i els que han assolit la millor loss ( la més baixa ) en el conjunt de validació. 
 
-Aquests pesos es guarden a la carpeta
-```plaintext
-"./logs/DIV2K/SRNet/YYYY-MM-DD/${NICKNAME}/checkpoints/[best,last].ckpt"
-o bé,
-"./logs/DIV2K/SRNet/YYYY-MM-DD/checkpoints/[best,last].ckpt",
-si no heu introduit cap nickname durant l'entrenament.
-```
-```plaintext
+Utitzem els pesos del best per obtenir les mètriques que millor funcionen en validació.
+Els pesos es guardaran a la següent ruta:
 
-IMAGE_DIR="/home/ivan/projects/TAMI-template/logs/DIV2K/SRNet/2024-10-28/hello_pytorch"
-python src/test.py --ckpt_path ${CKPT_DIR} --output_path ${IMAGE_DIR} --sampling 2 --dataset_path "/home/ivan/datasets/DIV2K"
+```plaintext
+CKPT_PATH="./logs/DIV2K/SRNet/YYYY-MM-DD/${NICKNAME}/checkpoints/best.ckpt"
+```
+o bé,
+```plaintext
+CKPT_PATH="./logs/DIV2K/SRNet/YYYY-MM-DD/checkpoints/best.ckpt",
+```
+si no heu introduit cap nickname durant l'entrenament.
+
+Example d'execució del testing
+```plaintext
+> python src/test.py --ckpt_path ${CKPT_PATH} --output_path ${IMAGE_DIR} --sampling 2 --dataset_path ${RUTA_DEL_DATASET}
 ```
 
 
