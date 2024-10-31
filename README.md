@@ -1,6 +1,6 @@
 # Deep Learning for Super Resolution - Template 
 
-Aquest repositori és un exemple de codi per entrenar i testejar un model de deep learning per super resolució
+Aquest repositori és un exemple de codi per entrenar i testejar un model de deep learning per a super resolució.
 
 ## Configuració de l'entorn virtual
 
