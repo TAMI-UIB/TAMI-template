@@ -4,7 +4,7 @@ Aquest repositori és un exemple de codi per entrenar i testejar un model de dee
 
 ## Configuració de l'entorn virtual
 
-Assegura't que tens instal·lat python3.12 y virtualenv (es pot fer amb qualsevol gestor d'entorns virtuals)
+Assegura't que tens instal·lat python3.12 y virtualenv (es pot fer amb qualsevol gestor d'entorns virtuals).
 
 ### Instal·lació de Python 3.12
 
@@ -22,12 +22,12 @@ Assegura't que tens instal·lat python3.12 y virtualenv (es pot fer amb qualsevo
 > pip install -r requirements.txt
 ```
 
-## Dataset:
+## Dataset
 
 Us podeu descarregar les dades del dataset en la següent plana web [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/).
 
 En aquest exemple s'ha agafat imatges d'alta resolució tallades de 512x512 i generam les imatge de baixa resolució nosaltres mateixos.
-Si voleu entrenar en condicions diferents haureu d'editar l'script ./src/dataloder/DIV2K.py
+Si voleu entrenar en condicions diferents haureu d'editar l'script ./src/dataloder/DIV2K.py.
 
 ```plaintext
 dataset/
@@ -46,11 +46,11 @@ dataset/
 ```
 ## Entrenament
 
-Per entrenar he d'executar la següent comanda en una terminal on tingueu l'entorn virtual activat. Suposant que esteu dintre de la carpeta TAMI-template
+Per entrenar he d'executar la següent comanda en una terminal on tingueu l'entorn virtual activat. Suposant que esteu dintre de la carpeta TAMI-template.
 ```plaintext
 > python src/train.py --sampling 2 --dataset_path ${RUTA_DEL_DATASET}
 ```
-Recordeu que en l'argparser hi ha molts d'arguments que podeu editar, si no teniu gpu serà necessari que li canvieu el dispositiu on s'executa tot afegint "--device cpu"
+Recordeu que en l'argparser hi ha molts d'arguments que podeu editar, si no teniu gpu serà necessari que li canvieu el dispositiu on s'executa tot afegint "--device cpu".
 
 ## Testeig
 
